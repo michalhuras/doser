@@ -1,6 +1,5 @@
-function count_it() {
-    var result = (document.getElementById("weight").value * document.getElementById("dose").value * document.getElementById("volume").value) / document.getElementById("concentration").value
-    document.getElementById("result_dose").innerHTML = result;
-    document.getElementById("single_dose").innerHTML = result / 2;
+function countDose() {
+    var result = (document.getElementById("patientWeight").value * document.getElementById("inputDose").value * document.getElementById("drugVolume").value) / document.getElementById("drugConcentration").value
+    document.getElementById("resultDoseSpan").innerHTML = result;
+    document.getElementById("singleDoseSpan").innerHTML = result / document.getElementById("dosesPerDay").value;
 }
-
